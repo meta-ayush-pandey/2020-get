@@ -2,7 +2,7 @@
 
 /**
  * This class holds the methods to operate on sparse matrix.
- * @author Martand
+ * @author Ayush
  *
  */
 public class SparseMatrix {
