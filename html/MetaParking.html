@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8" />
+		<title>MetaParking</title>
+		<script type="text/javascript" language="javascript">
+			var name;
+			function register(e)
+			{
+				var id = Math.floor(Math.random()*1000);
+					
+				name = document.getElementById("empName").value;
+				document.getElementById("reg").innerHTML = "<h1>Hey "+name+"..!!your employee id is </h1> "+id;
+				 return false;
+			}
+
+			function registerVechile()
+			{
+				var vechileNum = document.getElementById("vecNum").value;
+				document.getElementById("vechileRegistration").innerHTML = "<h1>Hey " +name +" your vechile "+vechileNum +" is registered</h1>";
+				var VechileType = document.getElementById("vecType").value;
+				if(VechileType == "Heavy vechile")
+				{
+					document.getElementById("dailyPlan").innerHTML="20";
+					document.getElementById("monthlyPlan").innerHTML="500";
+					document.getElementById("yearlyPlan").innerHTML="3500";
+				}
+			
+				else if(VechileType == "Car")
+				{
+					document.getElementById("dailyPlan").innerHTML="10";
+					document.getElementById("monthlyPlan").innerHTML="200";
+					document.getElementById("yearlyPlan").innerHTML="1000";
+				}
+				
+				return false;
+			}
+		 	function calcFare()
+			 {
+				 var payOption = document.getElementById("Currancy").value;
+				 var selectedPlan;
+				 var ele = document.getElementsByName('gender'); 
+              
+            	for(i = 0; i < ele.length; i++) { 
+					if(ele[i].checked) 
+					 selectedPlan=i+1;
+				}
+				 if(payOption == "USD")
+				 {
+					 if(selectedPlan == 1)
+					 document.getElementById("amount").innerHTML = 70*document.getElementById("dailyPlan").value;
+					 else if(selectedPlan == 2)
+					 document.getElementById("amount").innerHTML = 70*document.getElementById("monthlyPlan").value;
+					 else if(selectedPlan == 3)
+					 document.getElementById("amount").innerHTML = 70*document.getElementById("yearlyPlan").value;
+					 
+				 }
+				 else{
+					 
+					if(selectedPlan == 1)
+					 document.getElementById("amount").innerHTML = document.getElementById("dailyPlan").value;
+					 else if(selectedPlan == 2)
+					 document.getElementById("amount").innerHTML = document.getElementById("monthlyPlan").value;
+					 else if(selectedPlan == 3)
+					 document.getElementById("amount").innerHTML = document.getElementById("yearlyPlan").value;
+
+				 }
+
+
+			 } 
+			 
+		</script>
+		<style>
+			select
+			{
+				width: 175px;
+        		
+			}
+		</style>
+
+	</head>
+	<body >
+		<form id ="" onsubmit="return register(this)"> 
+			<h1>WELCOME TO META-PARKING</h1>
+			<table cellspacing=10 id="reg">
+				<tr>
+					<td><label>Name</label></td>
+					<td><label><input  id="empName" type="text" placeholder="enter your full name" required/></td>
+				</tr>
+				<tr>
+					<td><label>Email</label></td>
+					<td><input id="empEmail" type="text" placeholder="enter your metacube email" required /></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" placeholder="Password" required /></td>
+				</tr>
+				<tr>
+					<td>Confirm Password</td>
+					<td><input type="password" placeholder="confirm password" required /></td>
+				</tr>
+				<tr>
+					<td>Contact</td>
+					<td><input type="text" placeholder="contact number" required /></td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td><label><input type="radio" name="gender" required/>Male</label>
+					<label><input type="radio" name="gender" />Female</label></td>
+				<tr>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Go"  /></td>
+				</tr>
+			</table>
+		</form>
+
+		<form id = "vechileRegistration" onsubmit="return registerVechile(this)">
+			<table cellspacing = 10 >
+				<tr>
+					<td>
+						<label>Vechile Name</label>
+					</td>
+
+					<td>
+						<label><input type = "input" id ="empName" type="text" placeholder="vechile name" required/></label>
+					</td>
+				</tr>
+				<tr>
+					<label><td>Vechile Type</td></label>
+					<td>
+						<label><select id = "vecType">
+						<option>Heavy vechile</option>
+						<option>Car</option>
+						<option>Bike</option>
+						</select>
+						</label>
+					</td>
+				</tr>	
+				<tr>
+					<td>
+						<label >Vechile number</label>
+					</td>
+
+					<td>
+						<label><input type = "input" id ="vecNum" type="text" placeholder="vechile No" required/></label>
+					</td>	
+				</tr>
+				<tr>	
+				<td>
+					<label>Registraion id</label>
+				</td>
+
+				<td>
+					<label><input type = "input" id	 ="regId" type="text" placeholder="Registration id" required/></label>
+				</td>	
+				</tr>
+				<tr>
+					<td>
+						<label>Identification</label>
+					</td>
+					<td>
+						<textarea rows = "4" maxlength="200" required></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Go"  /></td>
+				</tr>
+			</table>
+		</form>
+		<form id = "plan" >
+			<table>
+				<tr><td><label><input type="radio" name="planForPark" />Daily <p1 id ="dailyPlan">5<br/></label></td></tr>
+				
+				<tr><td><label><input type="radio" name="planForPark" />Monthly <p1 id="monthlyPlan">100</p1><br/></label></td></tr>
+				<tr><td>
+					<label><input type="radio" name="planForPark" />yearly <p1 id="yearlyPlan">500</p1><br/></label>
+				</td></tr>
+			</table>
+			
+
+		</form>
+		<form id="" onsubmit="return calcFare()">
+			<label><select id = "Currancy">
+				
+				<option>INR</option>
+				<option>USD</option>
+				</select>
+			<input type="submit" value="Go"  /></td>	
+		</form>
+
+		please pay<p1 id = "amount"> 0 rs</p1>
+
+
+
+	</body>	
+</html>	
