@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>EmployeeManagementSystem</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <servlet-class>com.Student.RegistrationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistrationServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ShowTable</servlet-name>
+    <servlet-class>com.Student.ShowTable</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowTable</servlet-name>
+    <url-pattern>/ShowAllStudent</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UpdateStudentServlet</servlet-name>
+    <servlet-class>com.Student.UpdateStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateStudentServlet</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SearchStudentServlet</servlet-name>
+    <servlet-class>com.Student.SearchStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchStudentServlet</servlet-name>
+    <url-pattern>/Search</url-pattern>
+  </servlet-mapping>
+</web-app>

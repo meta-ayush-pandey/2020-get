@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+    <script src = AddStudent.js> 
+    </script> 
+</head>
+<body>
+<form id="registerStudent" onsubmit="return validate()" method = "post" action = "register">
+    <input type = "text" name = "fname" placeholder="first name" required /><br>
+    <input type = "text" name = "lname" placeholder="last name" required /><br>
+    <input type = "text" name = "father_name" placeholder="father's name" required /><br>
+    <input type = "text" name = "email" placeholder = "abc@mn.com" required><br>
+    
+    <!-- Class:<input type="number" size="16" name="age" min="1" max="12" value="8" ><br>
+     Age:<input type="number" size="6" name="age" min="3" max="150" value="21" ><br> -->
+     <!-- <input type = "text" name = "class" placeholder = "class" required /><br>    -->
+     
+     <input type = "text" name = "age" placeholder = "age" required /><br>
+     
+     <select name="class" required>
+        <option selected hidden >Select Class</option>
+        <option>PlayGroup</option>
+        <option>LKG</option>
+        <option>UKG</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>1 year</option>
+        <option>2 year</option>
+        <option>3 year</option>
+        <option>4 year</option>
+     </select><br>
+     <input type="submit" value="Submit">
+</form>
+</body>
+</html>
