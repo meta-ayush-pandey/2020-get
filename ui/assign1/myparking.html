@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meta-Parking</title>
+<!--<link href="myparking.css" rel="stylesheet" />-->
+</head>
+<body>
+    <header class = "header">
+        <nav >
+        <a href="#addEmployee"><span>Add Employee</span></a>
+        <a href="#addVehicle"><span>Add Vehicle</span></a>
+        <a href="#feedback"><span>Give feedback</span></a>
+        <a href="#type"><span>Pricing</span></a>
+        </nav>
+    </header>
+ <div><img src="https://picsum.photos/1000/450" alt="any random image" width="100%"></div>
+ 
+    <section>
+
+        <!-- Form to add employee details -->
+        <div id="addEmployee" class="addEmployee">
+            <form>
+                <fieldset>
+                    <legend>Employee Registration</legend>
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="Enter Name" required><br>
+                    <label>Email Id</label>
+                    <input type="email" name="email" placeholder="Enter Email" required><br>
+                    <label>Password</label>
+                    <input type="password" name="Password" placeholder="Enter Password" required><br>
+                    <label>Conform Password</label>
+                    <input type="password" name="name" placeholder="ReEnter Password" required><br>
+                    <label>Mobile Number</label>
+                    <input type="tel" name="mobileNumber" placeholder="enter mobile Number" required><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+
+            </form>
+        </div>
+
+        <!-- Form to add Vehicle details -->
+        <div id="addVehicle" class="addVehicle">
+            <form>
+                <fieldset>
+                    <legend>Vehicle Registration</legend>
+                    <label>Vehicle Model</label>
+                    <input type="text" name="name" placeholder="Enter Vehicle Model" required><br>
+                    <label>Type</label>
+                    <input type="email" name="email" placeholder="Enter Type" required><br>
+                    <label>Vehicle Number</label>
+                    <input type="text" name="Password" placeholder="Enter Vehicle Number" required><br>
+                    <label>Employee Id</label>
+                    <input type="text" name="name" placeholder="Enter Employee Id" required><br>
+                    <label>Identification</label>
+                    <textarea Placeholder="Identification"></textarea Placeholder required><br>
+                <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+        
+        <!-- Form for feedback -->
+        <div id="feedback" class="feedback">
+            <form>
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Enter Your Name" required><br>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Enter Email" required><br>
+                    <label>Subject</label>
+                    <input type="text" name="subject" placeholder="Enter Subject" required><br>
+                    <label>Message</label>
+                    <textarea Placeholder="Message"></textarea Placeholder><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+        
+        <!-- Form to  Type(daily price, monthly price, yearly price)-->
+        <div id="type" class="type">
+            <form>
+                <fieldset>
+                    <legend>Type</legend>
+                    <label>Cycle</label><br>
+                    Daily(5)<input type="radio" name="type" value="daily">
+                    Monthly(100)<input type="radio" name="type" value="monthly">
+                    Yearly(500)<input type="radio" name="type" value="yearly"><br>
+                    <label>MotorCycle</label><br>
+                    Daily(10)<input type="radio" name="type" value="daily">
+                    Monthly(200)<input type="radio" name="type" value="monthly">
+                    Yearly(1000)<input type="radio" name="type" value="yearly"><br>
+                    <label>Four Wheelers</label><br>
+                    Daily(20)<input type="radio" name="type" value="daily">
+                    Monthly(500)<input type="radio" name="type" value="monthly">
+                    Yearly(3500)<input type="radio" name="type" value="yearly"><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
