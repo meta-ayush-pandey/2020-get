@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meta-Parking</title>
+<link href="myparking.css" rel="stylesheet" />
+</head>
+<body>
+    <header class = "header">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#addEmployee"><span>Add Employee</span></a>
+                </li>
+                <li>
+                    <a href="#addVehicle"><span>Add Vehicle</span></a>
+                </li>
+                <li>
+                    <a href="#feedback"><span>Give feedback</span></a>
+                </li>
+                <li>
+                    <a href="#type"><span>Pricing</span></a>
+                </li>
+            </ul>
+        </nav>      
+    </header>
+   <!-- <div><img src="https://picsum.photos/1000/450" alt="any random image" width="100%"></div>
+    -->
+    <section>
+
+        <!-- Form to add employee details -->
+        <div id="addEmployee" class="addEmployee">
+            <form>
+                <fieldset>
+                    <legend>Employee Registration</legend>
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="Enter Name" required><br>
+                    <label>Email Id</label>
+                    <input type="email" name="email" placeholder="Enter Email" required><br>
+                    <label>Password</label>
+                    <input type="password" name="Password" placeholder="Enter Password" required><br>
+                    <label>Conform Password</label>
+                    <input type="password" name="name" placeholder="ReEnter Password" required><br>
+                    <label>Mobile Number</label>
+                    <input type="tel" name="mobileNumber" placeholder="enter mobile Number" required><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+
+            </form>
+        </div>
+
+        <!-- Form to add Vehicle details -->
+        <div id="addVehicle" class="addVehicle">
+            <form>
+                <fieldset>
+                    <legend>Vehicle Registration</legend>
+                    <label>Vehicle Model</label>
+                    <input type="text" name="name" placeholder="Enter Vehicle Model" required><br>
+                    <label>Type</label>
+                    <input type="email" name="email" placeholder="Enter Type" required><br>
+                    <label>Vehicle Number</label>
+                    <input type="text" name="Password" placeholder="Enter Vehicle Number" required><br>
+                    <label>Employee Id</label>
+                    <input type="text" name="name" placeholder="Enter Employee Id" required><br>
+                    <label>Identification</label>
+                    <textarea Placeholder="Identification"></textarea Placeholder required><br>
+                <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+        
+        <!-- Form for feedback -->
+        <div id="feedback" class="feedback">
+            <form>
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Enter Your Name" required><br>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Enter Email" required><br>
+                    <label>Subject</label>
+                    <input type="text" name="subject" placeholder="Enter Subject" required><br>
+                    <label class="middle">Message</label>
+                    <textarea Placeholder="Message"></textarea Placeholder><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+        
+        <!-- Form to  Type(daily price, monthly price, yearly price)-->
+        <div id="type" class="type">
+            <form>
+                <fieldset id = "price">
+                    <legend>Type</legend>
+                    <label id="typeOfVechile">Cycle</label> 
+                    <div class = "circle">
+                       <label><span>Daily(5)</span> <input type="radio" name="type" value="daily" ></label><br>
+                       <label><span>Monthly(100)</span> <input type="radio" name="type" value="monthly"></label><br>
+                       <label> <span>Yearly(500)</span><input type="radio" name="type" value="yearly"></label>
+                    </div>
+                    
+                    
+                    <label class = "typeOfVechile">MotorCycle</label>
+                    <div class = "circle">
+                        <label>  <span> Daily(10)</span><input type="radio" name="type" value="daily"></label>
+                    <label><span>(200)</span><input type="radio" name="type" value="monthly"> </label>
+                   <label> <span>Yearly(1000)</span><input type="radio" name="type" value="yearly"></label>
+                  </div>
+                  
+                   <label id="typeOfVechile">car</label> 
+                   <div class = "circle">
+                      <label><span>Daily(50)</span> <input type="radio" name="type" value="daily" ></label><br>
+                      <label><span>Monthly(500)</span> <input type="radio" name="type" value="monthly"></label><br>
+                      <label> <span>Yearly(5000)</span><input type="radio" name="type" value="yearly"></label>
+                    <input type="submit" value="Submit">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

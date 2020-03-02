@@ -1,0 +1,125 @@
+header{
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.addVehicle{
+    margin-top:60px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+}
+
+
+li{
+    float: left;
+    background-color: black;
+}
+
+
+
+li a{
+    display: block;
+    color:gainsboro;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+body{
+      background-color: cornflowerblue;
+  }
+
+  section{
+      padding: 60px;
+  }
+section fieldset{
+    border: 2px solid black;
+    margin: 10px ;
+    padding:20px;
+    border-radius: 5px;
+    width: 700px;
+    margin: 30px auto;
+}
+
+
+ legend{
+     display: block;
+    font: size 10;
+
+}
+input,textarea{
+    padding: 10px 10px;
+    width: calc(70% - 48px);
+    margin: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+}
+input[type=submit]{
+    width: auto;
+    padding: 5px 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    float:right;
+}
+input[type=radio]{
+    width: auto;
+    padding: 5px 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    
+}
+label{
+    display:inline-block;
+    width: 30%;
+}
+.middle{
+    padding-top:15px ;
+    vertical-align: top;
+}
+
+.circle 
+{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: gray;
+    border-color: darkgrey;
+
+}
+.circle label
+{ 
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 65px;
+    display: inline-block;    
+}
+
+#Cycle
+{
+    padding-left: 80px;
+}
+
+#price div{
+    display: inline-block;
+    
+}
