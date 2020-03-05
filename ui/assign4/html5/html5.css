@@ -1,0 +1,269 @@
+#head   
+{
+   background-image: url(homebg.png);
+   
+}
+#header
+{
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    padding-top: 0;
+    justify-content: space-around;
+}
+
+#header section img,i{
+    padding-top: 20px;
+}
+#header nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    padding-top: 20px;
+    margin:0;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+#header section i{
+    padding:20px;
+}
+a:hover{
+    background-color: blanchedalmond;
+}
+i:hover{
+    background-color: burlywood;
+}
+
+.below{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
+.below h1{
+    color: white;
+    font-family: monospace;
+}
+
+.below p{
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 30px;
+    font-family:monospace;
+    width: 60%;
+    font-size:  40px;
+    color: white;
+}
+.below section input{
+    padding: 10px 20px;
+
+}
+#download
+{
+    color: white;
+    background-color: red;
+    border: 0;
+    border-radius: 3px;
+}
+#feature
+{   background-color: darkblue;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+}
+body{
+    margin: 0 0;
+}
+#featurearticle
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#featurearticle header {
+    padding-left: 43%;
+    margin-top: 30px;
+    padding-bottom: 0;
+
+
+}
+#featurearticle header h1{
+    font-size: 30px;
+    color: skyblue;
+
+    padding-bottom: 0;
+    margin: 0 0;
+    margin-top: 20px;
+
+}
+#featurearticle header p{
+    padding-top: 0;
+    padding-left: 40px;
+    margin: 0 0;
+    color: slategrey;
+}
+.feature
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.feature section{
+    padding :30px 100px;
+
+}
+.feature section h1{
+    text-align: center;
+    padding-left: 20px;
+    margin: 0;
+}
+  
+.feature section p{
+
+    padding-left: 40px;
+    text-align: left;
+}
+.featureimg{
+   align-self: center;
+}
+.screenshots 
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.alignofscreenshots{
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    margin-left: 150px;
+}
+.alignofscreenshots section img{
+    margin: 40px;
+}
+/* .screenshots section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 30px;
+} */
+.screen1{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 60px;
+}
+.screen1 img{
+    width: 20%;
+}
+
+.screen1 p{
+    margin-top: 0;
+    
+    text-align: left;
+    padding-right: 250px;
+
+}
+
+footer{
+    background-color: #2b3856;
+}
+#seperator{
+    height: 1px;
+    background-color: grey;
+}
+#review
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#review div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#review div header h1
+{
+    margin-bottom: 10px;
+    color:skyblue;
+}
+#review div header p{
+    padding-left: 100px;
+    color:grey;
+
+    margin-top: 0;
+
+}
+
+.content
+{   
+    font-size: 15px;
+    font-weight: bold;
+}
+#downloadarticle
+{
+    background-color:rgb(90, 144, 199);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around   ;
+    margin-top: 30px;
+}
+#downloadarticle section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+    padding-bottom: 0;
+}
+#downloadarticle section div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.downloadClass
+{
+    text-align: center;
+    padding: 0;
+    
+}
+.downloadClass h1,p{
+    margin-bottom: 0px;
+    color: white;
+}
+.downloadClass h1{
+    margin-bottom: none;
+    padding-bottom: none;
+    font-size: 25px;
+}
+#downloadarticle .downloadClass p{
+    margin-top: none;
+    padding-top: none;
+
+}
+.downloadClass div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    
+}
+.footnav ul{
+    list-style: none;
+}
+
